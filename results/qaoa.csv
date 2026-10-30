@@ -1,0 +1,3 @@
+graph,mean_cut,best_cut,approximation_ratio,p_best_cut
+square (C4),3.0000,4,0.7500,0.5312
+complete (K4),3.6975,4,0.9244,0.7391

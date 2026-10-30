@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vqeh2"
+version = "0.1.0"
+description = "VQE for the H2 molecule and QAOA for MaxCut: STO-3G Gaussian integrals from scratch, Jordan-Wigner/parity mapping via qiskit-nature, variational optimization with Qiskit"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Be24002" }]
+keywords = ["quantum-computing", "vqe", "qaoa", "qiskit", "quantum-chemistry", "h2"]
+dependencies = [
+    "qiskit>=2.0",
+    "qiskit-nature>=0.8",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
